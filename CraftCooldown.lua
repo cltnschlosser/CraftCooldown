@@ -419,7 +419,7 @@ function scanItemTooltip()
 						seconds = seconds + val * s
 					end
 				end
-				cacheCooldown(skillName, time() + seconds)
+				cacheCooldown(GameTooltipTextLeft1:GetText(), time() + seconds)
 				printSkill(GameTooltipTextLeft1:GetText(), seconds)
 				-- printCached()
 				return
